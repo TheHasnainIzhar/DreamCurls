@@ -1,0 +1,28 @@
+.footer{
+    background-color: var(--mid-pink-bg);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1900px;
+    min-height: 385px;
+}
+
+.footer-text{
+    max-width: 1216px;
+    min-width: 0;
+    min-height: 107px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 135%;
+    letter-spacing: 1%;
+    text-align: center;
+    color: var(--white-foreground);
+    font-family: 'Calton Elegance Sans';
+}
+@media(max-width: 600px) {
+    .footer-text{
+        font-size: 28px;
+    }
+}
+

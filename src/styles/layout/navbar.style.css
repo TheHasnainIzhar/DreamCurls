@@ -1,0 +1,119 @@
+.navbar{
+    min-width: 100%;
+    height: 74px;
+    transition: all .2s ease;
+
+}
+
+.nav-content{
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-top: 15px;
+    padding-left: 80px;
+}
+
+.nav-logo{
+    width: 238px;
+    height: 45px;
+    visibility: 1;
+    transform: scale(1) translateX(0);
+    transition: all 1.5s ease;
+}
+
+.logo-element-1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 113.9999%;
+    letter-spacing: 5%;
+    text-align: center;
+    color: var(--content-color);
+}
+
+.logo-element-2{
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 113.999%;
+    letter-spacing: 5%;
+    text-align: center;
+    color: var(--content-color);
+}
+
+.nav-buttons{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-link{
+    color: var(--light-content-color);
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 3%;
+
+}
+
+.nav-link:hover{
+    color: var(--hover-color);
+}
+
+.menu-bar{
+    color: var(--content-color);
+    font-size: 25px;
+    font-weight: 800;
+    pointer-events: all;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-active{
+    background-color: var(--mid-pink-bg);
+    z-index: 10;
+    position: fixed;
+    top: 0;
+}
+
+@media(max-width: 935px){
+    .menu-bar{
+        display: block;
+        padding-right: 25px;
+    }
+
+    .nav-content{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding-left: 0px;
+    }
+
+    .nav-logo{
+        padding-left: 25px;
+    }
+
+    .nav-buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--mid-pink-bg);
+        width: 100%;
+        position: fixed;
+        z-index: -1;
+        top: 52;
+        transition: all 1s ease;
+        transform: translateY(-124%);
+    }
+}
+
+.menu-active{
+    transform: translateY(0);
+}
+.logo-scaling-down{
+    transform: scale(.7) translateX(-40);
+  }
+  
+  
+
