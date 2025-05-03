@@ -1,0 +1,23 @@
+.button{
+    background-color: var(--deep-pink-color);
+    pointer-events: all;
+    cursor: pointer;
+    max-width: 652px;
+    min-width: none;
+    min-height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 173px;
+}
+
+.button-text{
+    color: var(--text-content-white-color);
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 10%;
+    line-height: 113.999%;
+    text-transform: uppercase;
+    text-align: center;
+    width: 95%;
+}

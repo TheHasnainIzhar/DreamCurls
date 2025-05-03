@@ -1,0 +1,258 @@
+.content-page{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-body > * {
+    padding: 40px 0;
+}
+
+.content-heading{
+    max-width: 1150px;
+    width: 100%;
+    height: auto;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 153%;
+    letter-spacing: 3%;
+    text-align: center;
+    color: var(--deep-pink-color);
+    font-family: 'Calton Elegance Sans'
+}
+
+.article-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    height: auto;
+    max-width: 1428px;
+}
+
+.content-container img{
+    min-width: 0;
+    max-width: 100%;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+
+.content-container img:hover{
+    filter: grayscale(0%);
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 911px;
+    height: 100%;
+    width: auto;
+    gap: 20px;
+}
+
+.text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+
+}
+
+.text-heading{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 135%;
+    letter-spacing: 1%;
+    text-align: center;
+    color: var(--deep-pink-color);
+    font-family: 'Calton Elegance Sans';
+    max-width: 578px;
+    width: 100%;
+    height: auto;
+    text-align: left;
+}
+
+.text-para{
+    max-width: 658px;
+    width: 100%;
+    height: auto;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 133%;
+    letter-spacing: 3%;
+    color: var(--light-content-color);
+}
+
+@media(max-width: 1365px) {
+    .article-container{
+        flex-wrap: wrap;
+    }
+    .content-container{
+        border-bottom: 1px solid var(--content-color);
+        padding-bottom: 20px;
+        width: 75%;
+        display: flex;
+        align-items: center;
+    } 
+}
+
+@media(max-width: 900px) {
+    .content-heading{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 750px) {
+    .article-container{
+        min-width: 100%;
+    }
+}
+
+.content-page-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1740px;
+    min-width: 0;
+    height: auto;
+    min-height: 400px;
+    background-color: var(--very-light-pink);
+    border: 1px;
+    border-radius: 35px;
+    border-style: dashed;
+    padding: 30px 60px;
+    margin: 0 20px;
+}
+
+.content-footer-heading{
+    max-width: 1640px;
+    min-width: 0;
+    max-height: auto;
+    height: auto;
+    font-size: 36px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 3%;
+    line-height: 145%;
+    text-align: center;
+    font-family: 'Calton Elegance Sans';
+    color: var(--deep-pink-color);
+}
+
+.content-footer-para{
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 145%;
+    letter-spacing: 3%;
+    text-align: center;
+    font-family: 'Calton Elegance Sans';
+}
+
+@media(max-width: 800px){
+    .content-page-footer{
+        gap: 40px;
+        border-radius: 0;
+    }
+}
+
+.product-showcase{
+    width: 100%;
+    max-width: 1742px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.showcase-image{
+    width: 50%;
+    height: auto;
+}
+
+.showcase-image img{
+    width: 100%;
+    min-height: 871px;
+}
+
+.showcase-text{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-pink);
+    min-width: 0%;
+    max-width: 50%;
+    min-height: 871px;
+}
+
+.showcase-para{
+    max-width: 744px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 133%;
+    letter-spacing: 3%;
+    text-align: center;
+    color: var(--content-color);
+    font-family: 'Calton Elegance Sans';
+}
+
+.showcase-heading{
+    max-width: 744px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 133%;
+    letter-spacing: 3%;
+    text-align: center;
+    color: var(--deep-pink-color);
+    font-family: 'Calton Elegance Sans';
+}
+
+
+
+@media(max-width: 1200px){
+    .product-showcase{
+        width: 100%;
+    }
+    .showcase-content{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .showcase-text{
+        min-width: 100%;
+        padding: 0 10px;
+    }
+    .showcase-image{
+        width: 100%;
+    }
+}
+
+@media(max-width: 1000px){
+    .content-page-footer{
+        border-radius: 0;
+        margin: 0;
+        border: none;
+    }
+}
